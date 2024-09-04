@@ -5,48 +5,58 @@ import ReactLoading from 'react-loading';
 import { STATUS } from '../../utils/status';
 import './ProductList.css';
 import StarRatings from 'react-star-ratings';
+import { Tooltip } from 'react-tippy';
+import 'react-tippy/dist/tippy.css';
+import { useNavigate } from 'react-router-dom';
 
 
 const ProductList = () => {
   const dispatch = useDispatch();
-
+  const navigate = useNavigate();
   const { products, productsStatus } = useSelector((state) => state.products);
-
-  console.log('products', products);
-  console.log('productsStatus', productsStatus);
 
   useEffect(() => {
     dispatch(getproducts());
   }, [dispatch]);
 
+  const handleClick = (item) => {
+    console.log('item', item);
+    navigate(`/urun/${item.id}`);
+
+  };
+
 
   return (<div className="product-list">
     {
-
       productsStatus === STATUS.LOADING ? <ReactLoading type="spin" color="#ff9933" height={64} width={64} /> :
 
-        products.map((product, index) => (<div className="product-card" key={index}>
-          <img className="product-card-img" src={product.image} />
-          <div className="product-card-content">
-            <p className="mb-2 truncate">{product.title}</p>
-            <p className="mb-2">{product.rating.count} favoriledi</p>
-            <div className="product-card-rating">
-              <StarRatings
-                rating={product.rating.rate}
-                starRatedColor="#FFD700"
-                numberOfStars={5}
-                name="rating"
-                starDimension="16px"
-                starSpacing="3px"
-              />
-              <span>{product.rating.rate}</span>
+        products.map((product, index) => (
+          <div onClick={() => handleClick(product)} className="product-card" key={index}>
+            <img className="product-card-img" src={product.image} />
+            <div className="product-card-content">
+              <Tooltip title={product.title} position="top" trigger="mouseenter" size="small">
+                <p className="product-card-title">{product.title}</p>
+              </Tooltip>
+              <p className="product-card-fav">
+                <span>{product.rating.count} </span>
+                favoriledi!
+              </p>
+              <div className="product-card-rating">
+                <StarRatings
+                  rating={product.rating.rate}
+                  starRatedColor="#FFD700"
+                  numberOfStars={5}
+                  name="rating"
+                  starDimension="16px"
+                  starSpacing="3px"
+                />
+                <span>{product.rating.rate}</span>
+
+              </div>
+              <p className="product-card-price">{product?.price} ₺</p>
             </div>
-
-            <p className="product-card-price">{product?.price} ₺</p>
           </div>
-        </div>))
-
-
+        ))
     }
 
   </div>);

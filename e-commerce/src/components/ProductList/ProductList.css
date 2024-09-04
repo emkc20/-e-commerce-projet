@@ -2,10 +2,22 @@
     @apply flex flex-wrap justify-between gap-y-5 text-sm;
 
     .product-card {
-        @apply w-[230px] h-96 rounded border border-gray-200 p-3;
+        @apply w-[230px] h-96 rounded border border-gray-200 p-3 cursor-pointer;
 
         .product-card-img {
             @apply w-full h-[225px] rounded mb-3;
+        }
+
+        .product-card-title {
+            @apply mb-2 truncate;
+        }
+
+        .product-card-fav {
+            @apply mb-2;
+
+            span {
+                @apply text-[#fb923c];
+            }
         }
 
         .product-card-rating {
@@ -17,7 +29,7 @@
         }
 
         .product-card-price {
-            @apply text-base font-bold text-[#fb923c];
+            @apply text-center rounded bg-[#0bc15c] text-[#fff] py-1;
         }
     }
 }

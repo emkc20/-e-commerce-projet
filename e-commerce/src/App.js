@@ -1,5 +1,4 @@
-import './App.css';
-import React, { useState } from 'react';
+import React from 'react';
 import Home from './pages/Home';
 import Basket from './pages/Basket';
 import ProductDetail from './pages/ProductDetail';
@@ -15,7 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/sepet" element={<Basket />} />
-            <Route path="/urun/:name/:id" element={<ProductDetail />} />
+            <Route path="/urun/:id" element={<ProductDetail />} />
           </Routes>
         </Router>
       </DefaultLayout>
