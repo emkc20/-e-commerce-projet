@@ -10,8 +10,8 @@ const initialState = {
   productsDetailStatus: STATUS.IDLE,
 };
 
-export const getproducts = createAsyncThunk('category', async () => {
-  const response = await axios.get('https://fakestoreapi.com/products/categories');
+export const getproducts = createAsyncThunk('getProducts', async () => {
+  const response = await axios.get('https://fakestoreapi.com/products');
   return response.data;
 });
 
@@ -26,7 +26,7 @@ const productsSlice = createSlice({
     });
 
     builder.addCase(getproducts.fulfilled, (state, action) => {
-      state.categories = action.payload;
+      state.products = action.payload;
       state.productsStatus = STATUS.SUCCESS;
 
     });

@@ -1,0 +1,23 @@
+.product-list {
+    @apply flex flex-wrap justify-between gap-y-5 text-sm;
+
+    .product-card {
+        @apply w-[230px] h-96 rounded border border-gray-200 p-3;
+
+        .product-card-img {
+            @apply w-full h-[225px] rounded mb-3;
+        }
+
+        .product-card-rating {
+            @apply flex items-center mb-3;
+
+            span {
+                @apply ml-3;
+            }
+        }
+
+        .product-card-price {
+            @apply text-base font-bold text-[#fb923c];
+        }
+    }
+}

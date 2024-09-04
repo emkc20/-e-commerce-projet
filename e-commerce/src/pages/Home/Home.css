@@ -1,11 +1,11 @@
 .home-page {
-    @apply text-3xl font-bold underline flex gap-5 h-lvh;
+    @apply text-3xl font-bold flex gap-5 h-lvh;
 
     .home-page-side-bar {
         @apply w-1/4 bg-[#f3f3f3] h-full;
     }
 
     .home-page-content {
-        @apply w-3/4 h-full bg-[#f3f3f3];
+        @apply w-3/4 h-full;
     }
 }
