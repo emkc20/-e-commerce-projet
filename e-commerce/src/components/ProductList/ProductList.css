@@ -1,5 +1,6 @@
 .product-list {
-    @apply flex flex-wrap justify-between gap-y-5 text-sm;
+    @apply grid text-sm gap-2.5;
+    grid-template-columns: repeat(3, 1fr);
 
     .product-card {
         @apply w-[230px] h-96 rounded border border-gray-200 p-3 cursor-pointer;
@@ -13,8 +14,6 @@
         }
 
         .product-card-fav {
-            @apply mb-2;
-
             span {
                 @apply text-[#fb923c];
             }

@@ -20,9 +20,7 @@ const ProductList = () => {
   }, [dispatch]);
 
   const handleClick = (item) => {
-    console.log('item', item);
     navigate(`/urun/${item.id}`);
-
   };
 
 
@@ -38,8 +36,7 @@ const ProductList = () => {
                 <p className="product-card-title">{product.title}</p>
               </Tooltip>
               <p className="product-card-fav">
-                <span>{product.rating.count} </span>
-                favoriledi!
+                <span>{product.rating.count} kişi </span> favoriledi!
               </p>
               <div className="product-card-rating">
                 <StarRatings
