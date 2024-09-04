@@ -1,0 +1,7 @@
+.default-layout {
+    @apply w-full relative;
+
+    .default-layout-wrapper {
+        @apply w-[1080px] m-auto mt-5;
+    }
+}

@@ -1,0 +1,32 @@
+.navbar-wrapper {
+    @apply w-full border-b h-[75px] flex justify-between items-center;
+}
+
+.navbar {
+    @apply w-[1080px] m-auto flex items-center justify-between h-[50px];
+}
+
+.navbar-logo {
+    @apply font-semibold text-3xl;
+
+    span {
+        @apply font-normal;
+    }
+}
+
+.navbar-search-select {
+    @apply w-[300px] rounded;
+}
+
+.navbar-basket {
+    @apply flex items-center w-[140px] justify-between;
+
+    span {
+        @apply ml-2
+    }
+
+    .navbar-basket-count {
+        @apply text-white rounded-full bg-[#fb923c] flex items-center justify-center w-6 h-6 text-sm;
+    }
+}
+

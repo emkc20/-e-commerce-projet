@@ -1,16 +1,26 @@
-import "./App.css";
-import { useState } from "react";
+import './App.css';
+import React, { useState } from 'react';
+import Home from './pages/Home';
+import Basket from './pages/Basket';
+import ProductDetail from './pages/ProductDetail';
+import DefaultLayout from './layouts/default.layout';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 function App() {
-  const [name, setName] = useState("ilhan");
-
-  const test = "aa";
-
   return (
-
-    <div className="App">
-      <>{name}</>
+    <div>
+      <DefaultLayout>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/sepet" element={<Basket />} />
+            <Route path="/urun/:name/:id" element={<ProductDetail />} />
+          </Routes>
+        </Router>
+      </DefaultLayout>
     </div>
+
   );
 }
 

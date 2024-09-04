@@ -1,6 +1,0 @@
-{
-  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
-  "rules": {
-    "no-multiple-empty-lines": ["error", { "max": 1, "maxBOF": 0, "maxEOF": 0 }]
-  }
-}
