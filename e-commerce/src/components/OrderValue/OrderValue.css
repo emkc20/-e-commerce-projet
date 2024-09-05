@@ -1,0 +1,15 @@
+.order-value {
+    @apply flex items-center mb-10 justify-between border rounded p-5;
+
+    img {
+        @apply w-[40px] mr-8;
+    }
+
+    p {
+        @apply text-base;
+    }
+
+    .order-left, .order-right {
+        @apply flex items-center;
+    }
+}

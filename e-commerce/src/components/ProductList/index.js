@@ -25,36 +25,32 @@ const ProductList = () => {
 
 
   return (<div className="product-list">
-    {
-      productsStatus === STATUS.LOADING ? <ReactLoading type="spin" color="#ff9933" height={64} width={64} /> :
+    {productsStatus === STATUS.LOADING ? <ReactLoading type="spin" color="#ff9933" height={64} width={64} /> :
 
-        products.map((product, index) => (
-          <div onClick={() => handleClick(product)} className="product-card" key={index}>
-            <img className="product-card-img" src={product.image} />
-            <div className="product-card-content">
-              <Tooltip title={product.title} position="top" trigger="mouseenter" size="small">
-                <p className="product-card-title">{product.title}</p>
-              </Tooltip>
-              <p className="product-card-fav">
-                <span>{product.rating.count} kişi </span> favoriledi!
-              </p>
-              <div className="product-card-rating">
-                <StarRatings
-                  rating={product.rating.rate}
-                  starRatedColor="#FFD700"
-                  numberOfStars={5}
-                  name="rating"
-                  starDimension="16px"
-                  starSpacing="3px"
-                />
-                <span>{product.rating.rate}</span>
+      products.map((product, index) => (<div onClick={() => handleClick(product)} className="product-card" key={index}>
+          <img className="product-card-img" src={product.image} />
+          <div className="product-card-content">
+            <Tooltip title={product.title} position="top" trigger="mouseenter" size="small">
+              <p className="product-card-title">{product.title}</p>
+            </Tooltip>
+            <p className="product-card-fav">
+              <span>{product.rating.count} kişi </span> favoriledi!
+            </p>
+            <div className="product-card-rating">
+              <StarRatings
+                rating={product.rating.rate}
+                starRatedColor="#FFD700"
+                numberOfStars={5}
+                name="rating"
+                starDimension="16px"
+                starSpacing="3px"
+              />
+              <span>{product.rating.rate}</span>
 
-              </div>
-              <p className="product-card-price">{product?.price} ₺</p>
             </div>
+            <p className="product-card-price">{product?.price} ₺</p>
           </div>
-        ))
-    }
+        </div>))}
 
   </div>);
 };

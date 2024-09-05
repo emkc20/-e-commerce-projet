@@ -1,5 +1,5 @@
 .home-page {
-    @apply text-3xl font-bold flex gap-5 h-lvh;
+    @apply text-3xl font-bold flex gap-5;
 
     .home-page-side-bar {
         @apply w-1/4 bg-[#f3f3f3] h-full;

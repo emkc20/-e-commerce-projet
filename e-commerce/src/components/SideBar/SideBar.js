@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCategories } from '../../redux/CategoriesSlice';
+import { getproducts } from '../../redux/ProductsSlice';
 import './SideBar.css';
 import { productsCategoryFilter, setPriceRange, setRatingStar, setSortBy } from '../../redux/ProductsSlice';
 import StarRatings from 'react-star-ratings';
@@ -12,14 +13,11 @@ function SideBar() {
   const dispatch = useDispatch();
   const { categories } = useSelector((state) => state.categories);
 
+
   useEffect(() => {
-      fetchCategories();
+      dispatch(getCategories());
     }, [dispatch],
   );
-
-  const fetchCategories = () => {
-    dispatch(getCategories());
-  };
 
   const handleClick = (category) => {
     dispatch(productsCategoryFilter(category));
@@ -40,7 +38,7 @@ function SideBar() {
       <div className="side-bar-title">Kategoriler</div>
       {categories.length > 0 &&
         <ul className="side-bar-list">
-          <li className="side-bar-item" onClick={() => fetchCategories()}>Tümü</li>
+          <li className="side-bar-item" onClick={() => dispatch(getproducts())}>Tümü</li>
           {categories.map((category, index) =>
             <li key={index} onClick={() => handleClick(category)}
                 className="side-bar-item">{category}

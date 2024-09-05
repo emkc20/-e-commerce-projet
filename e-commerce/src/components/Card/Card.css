@@ -1,0 +1,44 @@
+.card-wrapper {
+    @apply flex gap-8;
+
+    .card-img {
+        @apply w-[300px]
+    }
+
+
+    .card-content {
+        .card-title {
+            @apply text-4xl mb-4;
+        }
+
+        .card-desc {
+            @apply text-xl mb-4;
+        }
+
+        .card-rating {
+            @apply flex mb-4;
+
+            .product-card-rating {
+                @apply mr-8;
+            }
+
+            .product-card-fav {
+                span {
+                    @apply text-[#fb923c];
+                }
+            }
+        }
+
+        .card-price {
+            @apply flex;
+
+            .card-value {
+                @apply text-xl text-center rounded bg-[#0bc15c] text-[#fff] px-10 py-2 cursor-pointer mr-3;
+            }
+        }
+
+        .card-basket {
+            @apply px-10 py-2 text-xl text-center rounded bg-[#fb923c] text-[#fff];
+        }
+    }
+}
