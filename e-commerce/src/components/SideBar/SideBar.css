@@ -1,0 +1,64 @@
+.side-bar {
+    @apply p-4 text-lg cursor-default;
+
+    .side-bar-title {
+        @apply border-b mb-4;
+
+    }
+
+    .side-bar-list {
+        @apply border-b mb-4;
+    }
+
+    .side-bar-item {
+        @apply mb-2 cursor-pointer;
+    }
+
+    .side-bar-item:hover {
+        @apply rounded border border-gray-200 bg-gray-200;
+    }
+
+    .side-bar-item::first-letter {
+        text-transform: uppercase;
+    }
+
+    .side-bar-price-range {
+        .side-bar-price {
+            @apply flex text-xs my-4;
+
+            .price-item {
+                @apply mr-4 text-[#fb923c] p-1 bg-white rounded cursor-pointer;
+            }
+
+            .price-item:hover {
+                @apply bg-[#fb923c] text-white;
+            }
+        }
+    }
+
+    .side-bar-section {
+        @apply border-b mb-4;
+    }
+
+    .side-bar-star {
+        span {
+            @apply text-xs;
+        }
+
+        .star-ratings {
+            @apply bg-white mr-4 px-2 rounded mb-4;
+        }
+    }
+
+    .side-bar-star-container {
+        @apply cursor-pointer;
+    }
+
+    .side-bar-select {
+        .side-bar-price-select {
+            @apply w-full p-4;
+        }
+    }
+
+
+}
