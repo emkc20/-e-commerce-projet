@@ -5,9 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e6063d0-0cd3-499d-a736-0ffa93e2f569" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/e-commerce/src/components/SideBar/SideBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/SideBar/SideBar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-commerce/src/components/OrderValue/OrderValue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-commerce/src/components/OrderValue/OrderValue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-commerce/src/redux/BasketSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e-commerce/src/redux/ProductDetailSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/src/components/Card/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/Card/Card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/src/components/Card/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/Card/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/src/components/Navbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/Navbar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/src/components/ProductList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/ProductList/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e-commerce/src/components/SideBar/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/SideBar/SideBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/src/redux/ProductsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/redux/ProductsSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/src/pages/Basket/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/pages/Basket/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/src/pages/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/pages/Home/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/src/pages/ProductDetail/ProductDetail.css" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/pages/ProductDetail/ProductDetail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/src/pages/ProductDetail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/pages/ProductDetail/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/redux/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +81,9 @@
       <recent name="C:\Users\Emekci\Documents\react\e-commerce\e-commerce\src\redux" />
       <recent name="C:\Users\Emekci\Documents\react\e-commerce\e-commerce\src\pages" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Emekci\Documents\react\e-commerce\e-commerce\src\components\OrderValue" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -101,7 +119,7 @@
       <updated>1725449826725</updated>
       <workItem from="1725449827866" duration="608000" />
       <workItem from="1725450451153" duration="34107000" />
-      <workItem from="1725523421312" duration="16171000" />
+      <workItem from="1725523421312" duration="39056000" />
     </task>
     <servers />
   </component>
