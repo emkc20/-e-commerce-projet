@@ -1,17 +1,16 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
-import { STATUS } from '../utils/status';
+import { STATUS } from '../enum/status';
+import { getProductDetails } from '../service/products';
 
 
 const initialState = {
   product: {},
   productStatus: STATUS.IDLE,
-
 };
 
-export const getProductDetail = createAsyncThunk('product', async (id) => {
-  const response = await axios.get(`https://fakestoreapi.com/products/${id}`);
-  return response.data;
+export const getProductDetail = createAsyncThunk('product', async (category) => {
+  const response = await getProductDetails(category);
+  return response;
 });
 
 const productDetailSlice = createSlice({
@@ -29,7 +28,5 @@ const productDetailSlice = createSlice({
   },
 });
 
-
-//export const { getProductDetail } = productDetailSlice.actions;
 
 export default productDetailSlice.reducer;

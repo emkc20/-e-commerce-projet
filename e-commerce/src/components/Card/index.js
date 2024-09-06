@@ -19,10 +19,6 @@ const Card = ({ product }) => {
     });
   };
 
-  const { products } = useSelector((state) => state.basketSlice);
-
-  console.log('products', products);
-
   return (
     <div className="card-wrapper">
       <div className="card-img">

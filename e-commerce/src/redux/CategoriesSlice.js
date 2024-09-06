@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+import { getProductCategories } from '../service/products';
 
 
 const initialState = {
@@ -7,8 +7,9 @@ const initialState = {
 };
 
 export const getCategories = createAsyncThunk('category', async () => {
-  const response = await axios.get('https://fakestoreapi.com/products/categories');
-  return response.data;
+  const slugName = 'categories';
+  const response = await getProductCategories(slugName);
+  return response;
 });
 
 const categoriesSlice = createSlice({

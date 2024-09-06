@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { STATUS } from '../utils/status';
-import axios from 'axios';
+import { STATUS } from '../enum/status';
+import { getProduct, getProductCategory } from '../service/products';
+import { ProductQuantity } from '../enum/ProductQuantity';
 
 
 const initialState = {
@@ -9,17 +10,17 @@ const initialState = {
   productsStatus: STATUS.IDLE,
   productsDetail: [],
   productsDetailStatus: STATUS.IDLE,
-  sortBy: 'inc',
+  sortBy: ProductQuantity.INC,
 };
 
 export const getproducts = createAsyncThunk('getProducts', async () => {
-  const response = await axios.get('https://fakestoreapi.com/products');
-  return response.data;
+  const response = await getProduct();
+  return response;
 });
 
 export const productsCategoryFilter = createAsyncThunk('productsCategoryFilter', async (category) => {
-  const response = await axios.get(`https://fakestoreapi.com/products/category/${category}`);
-  return response.data;
+  const response = await getProductCategory(category);
+  return response;
 });
 
 const productsSlice = createSlice({
@@ -37,15 +38,13 @@ const productsSlice = createSlice({
       state.products = priceStort;
     },
     setSortBy: (state, action) => {
-      console.log('sss', action);
       state.products = state.initialProducts;
       state.sortBy = action.payload;
       const priceStort = state.products.slice().sort((a, b) => {
-        if (state.sortBy === 'inc') {
+        if (state.sortBy === ProductQuantity.INC) {
           return a.price - b.price;
-        } else {
-          return b.price - a.price;
         }
+        return b.price - a.price;
       });
 
       state.products = priceStort;
@@ -62,7 +61,6 @@ const productsSlice = createSlice({
       state.products = action.payload;
       state.initialProducts = action.payload;
       state.productsStatus = STATUS.SUCCESS;
-      console.log('state.initialProducts', state.initialProducts);
     });
 
     builder.addCase(productsCategoryFilter.pending, (state, action) => {
