@@ -22,19 +22,10 @@
         text-transform: uppercase;
     }
 
-    .side-bar-price-range {
-        .side-bar-price {
-            @apply flex text-xs my-4;
-
-            .price-item {
-                @apply mr-4 text-[#fb923c] p-1 bg-white rounded cursor-pointer;
-            }
-
-            .price-item:hover {
-                @apply bg-[#fb923c] text-white;
-            }
-        }
+    .side-bar-price-item:hover {
+        @apply bg-[#fb923c] text-white;
     }
+
 
     .side-bar-section {
         @apply border-b mb-4;

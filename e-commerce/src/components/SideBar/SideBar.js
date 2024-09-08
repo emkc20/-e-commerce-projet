@@ -48,9 +48,14 @@ function SideBar() {
 
       <div className="side-bar-price-range side-bar-section">
         <p>Fiyat Aralığına Göre Sırala</p>
-        <div className="side-bar-price">
-          {priceRange && priceRange.map(price =>
-            <p className="price-item" onClick={() => filteredPrice(price)}>{price.min} - {price.max} </p>)}
+        <div>
+          <ul className="flex text-xs my-4">
+            {
+              priceRange.map(price => <li
+                className="mr-4 text-[#fb923c] p-2 bg-white rounded cursor-pointer side-bar-price-item"
+                onClick={() => filteredPrice(price)}>{price.min} - {price.max}</li>)
+            }
+          </ul>
         </div>
       </div>
 
