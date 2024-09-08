@@ -39,7 +39,7 @@ function SideBar() {
       {categories.length > 0 &&
         <ul className="side-bar-list">
           <li className="side-bar-item" onClick={() => dispatch(getproducts())}>Tümü</li>
-          {categories.map((category, index) =>
+          {categories && categories.map((category, index) =>
             <li key={index} onClick={() => handleClick(category)}
                 className="side-bar-item">{category}
             </li>)}
@@ -49,7 +49,7 @@ function SideBar() {
       <div className="side-bar-price-range side-bar-section">
         <p>Fiyat Aralığına Göre Sırala</p>
         <div className="side-bar-price">
-          {priceRange.map(price =>
+          {priceRange && priceRange.map(price =>
             <p className="price-item" onClick={() => filteredPrice(price)}>{price.min} - {price.max} </p>)}
         </div>
       </div>
