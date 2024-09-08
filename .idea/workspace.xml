@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e6063d0-0cd3-499d-a736-0ffa93e2f569" name="Changes" comment="workspace commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/src/components/Card/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/Card/Card.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/src/components/Card/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/Card/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/src/components/Navbar/NavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/Navbar/NavBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/src/components/Navbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/Navbar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/src/components/OrderValue/OrderValue.css" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/OrderValue/OrderValue.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/src/components/OrderValue/OrderValue.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/OrderValue/OrderValue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/src/components/ProductList/ProductList.css" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/ProductList/ProductList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/src/components/ProductList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/ProductList/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/src/layouts/default.layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/layouts/default.layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/src/pages/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/pages/Home/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/src/pages/ProductDetail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/pages/ProductDetail/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/src/redux/ProductsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/redux/ProductsSlice.js" afterDir="false" />
-    </list>
+    <list default="true" id="1e6063d0-0cd3-499d-a736-0ffa93e2f569" name="Changes" comment="workspace commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,7 +105,7 @@
       <workItem from="1725523421312" duration="41498000" />
       <workItem from="1725593475317" duration="21559000" />
       <workItem from="1725700328038" duration="6064000" />
-      <workItem from="1725782347206" duration="8433000" />
+      <workItem from="1725782347206" duration="9232000" />
     </task>
     <task id="LOCAL-00001" summary="workspace commit">
       <option name="closed" value="true" />
@@ -137,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725640253776</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="workspace commit">
+      <option name="closed" value="true" />
+      <created>1725797111417</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725797111417</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
