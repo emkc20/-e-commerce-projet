@@ -5,25 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e6063d0-0cd3-499d-a736-0ffa93e2f569" name="Changes" comment="workspace commit">
-      <change afterPath="$PROJECT_DIR$/e-commerce/src/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e-commerce/src/enum/ProductQuantity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e-commerce/src/service/apiService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e-commerce/src/service/products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e-commerce/src/utils/getTotal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/src/components/Card/Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/Card/Card.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e-commerce/src/components/Card/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/Card/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/src/components/Navbar/NavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/Navbar/NavBar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e-commerce/src/components/Navbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/Navbar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/src/components/OrderValue/OrderValue.css" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/OrderValue/OrderValue.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e-commerce/src/components/OrderValue/OrderValue.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/OrderValue/OrderValue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/src/components/ProductList/ProductList.css" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/ProductList/ProductList.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e-commerce/src/components/ProductList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/ProductList/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/src/pages/Basket/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/pages/Basket/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/pages/Home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/src/redux/BasketSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/redux/BasketSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/src/redux/ProductDetailSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/redux/ProductDetailSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/src/layouts/default.layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/layouts/default.layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/src/pages/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/pages/Home/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/src/pages/ProductDetail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/pages/ProductDetail/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e-commerce/src/redux/ProductsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/redux/ProductsSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-commerce/src/utils/status.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/enum/status.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +77,7 @@
       <recent name="C:\Users\Emekci\Documents\react\e-commerce\e-commerce\src\pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Emekci\Documents\react\e-commerce\e-commerce" />
       <recent name="C:\Users\Emekci\Documents\react\e-commerce\e-commerce\src\enum" />
       <recent name="C:\Users\Emekci\Documents\react\e-commerce\e-commerce\src\components\OrderValue" />
     </key>
@@ -122,7 +117,9 @@
       <workItem from="1725449827866" duration="608000" />
       <workItem from="1725450451153" duration="34107000" />
       <workItem from="1725523421312" duration="41498000" />
-      <workItem from="1725593475317" duration="13272000" />
+      <workItem from="1725593475317" duration="21559000" />
+      <workItem from="1725700328038" duration="6064000" />
+      <workItem from="1725782347206" duration="8433000" />
     </task>
     <task id="LOCAL-00001" summary="workspace commit">
       <option name="closed" value="true" />
@@ -132,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725576747996</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="workspace commit">
+      <option name="closed" value="true" />
+      <created>1725640253776</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725640253776</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
