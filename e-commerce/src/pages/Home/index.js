@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import './Home.css';
 import ProductList from '../../components/ProductList';
 import SideBar from '../../components/SideBar/SideBar';
-import { getProductDetails } from '../../service/products';
 
 const Home = () => {
 
