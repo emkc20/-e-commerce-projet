@@ -27,7 +27,8 @@ const ProductList = () => {
   return (<div className="product-list">
     {productsStatus === STATUS.LOADING ? <ReactLoading type="spin" color="#ff9933" height={64} width={64} /> :
 
-      products.map((product, index) => (<div onClick={() => handleClick(product)} className="product-card" key={index}>
+      products.map((product, index) => (
+        <div onClick={() => handleClick(product)} className="product-card" key={index}>
         <img className="product-card-img" src={product.image} />
         <div className="product-card-content">
           <Tooltip title={product.title} position="top" trigger="mouseenter" size="small">

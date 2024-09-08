@@ -3,7 +3,7 @@
 }
 
 .navbar {
-    @apply w-[1080px] m-auto flex items-center justify-between h-[50px];
+    @apply w-full px-3 sm:px-0 sm:w-[1080px] m-auto flex items-center justify-between h-[50px] ;
 }
 
 .navbar-logo {
@@ -15,7 +15,7 @@
 }
 
 .navbar-search-select {
-    @apply w-[300px] rounded;
+    @apply hidden md:flex;
 }
 
 .navbar-basket {

@@ -1,12 +1,11 @@
 .product-list {
-    @apply grid text-sm gap-2.5;
-    grid-template-columns: repeat(3, 1fr);
+    @apply flex flex-wrap text-sm gap-2.5;
 
     .product-card {
-        @apply w-[230px] h-96 rounded border border-gray-200 p-3 cursor-pointer;
+        @apply w-full sm:w-[230px] h-96 rounded border border-gray-200 p-3 cursor-pointer;
 
         .product-card-img {
-            @apply w-full h-[225px] rounded mb-3;
+            @apply object-contain w-full h-[225px] rounded mb-3;
         }
 
         .product-card-title {

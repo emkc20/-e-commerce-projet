@@ -1,7 +1,7 @@
 import React from 'react';
 import './Card.css';
 import StarRatings from 'react-star-ratings';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addToCart } from '../../redux/BasketSlice';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -48,9 +48,9 @@ const Card = ({ product }) => {
           <button onClick={() => onAddToCart(product)} className="card-basket">
             Sepete Eke
           </button>
-          <ToastContainer />
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

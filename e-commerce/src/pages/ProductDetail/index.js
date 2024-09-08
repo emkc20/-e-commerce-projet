@@ -14,7 +14,7 @@ const ProductDetail = () => {
 
   useEffect(() => {
     dispatch(getProductDetail(id));
-  }, [dispatch]);
+  }, [dispatch, id]);
 
   return (
     <div className="product-detail">

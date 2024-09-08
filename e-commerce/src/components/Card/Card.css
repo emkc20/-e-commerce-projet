@@ -1,18 +1,18 @@
 .card-wrapper {
-    @apply flex gap-8;
+    @apply flex gap-8 flex-col sm:flex-row flex-wrap sm:flex-nowrap;
 
     .card-img {
-        @apply w-[300px]
+        @apply m-auto w-[250px];
     }
 
 
     .card-content {
         .card-title {
-            @apply text-4xl mb-4;
+            @apply text-2xl sm:text-3xl mb-4;
         }
 
         .card-desc {
-            @apply text-xl mb-4;
+            @apply text-lg mb-4;
         }
 
         .card-rating {
@@ -30,7 +30,7 @@
         }
 
         .card-price {
-            @apply flex;
+            @apply flex justify-between sm:justify-start;
 
             .card-value {
                 @apply text-xl text-center rounded bg-[#0bc15c] text-[#fff] px-10 py-2 cursor-pointer mr-3;

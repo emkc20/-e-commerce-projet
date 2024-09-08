@@ -28,7 +28,7 @@ const OrderValue = () => {
         {cart && cart.map((item, index) => <div className="order-value" key={index}>
           <div className="order-left">
             <img src={item.image} alt="" />
-            <p className="mr-8 truncate">{item.title}</p>
+            <p className="mr-8 truncate w-[500px]">{item.title}</p>
           </div>
 
           <div className="order-right">

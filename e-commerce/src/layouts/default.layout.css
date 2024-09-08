@@ -2,6 +2,6 @@
     @apply w-full relative;
 
     .default-layout-wrapper {
-        @apply w-[1080px] m-auto mt-5;
+        @apply w-full sm:w-[1080px] m-auto mt-5 px-3;
     }
 }
