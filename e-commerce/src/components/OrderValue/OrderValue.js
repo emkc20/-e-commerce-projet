@@ -52,7 +52,7 @@ const OrderValue = () => {
             </h3>
             <h3 className="text-xl text-center mt-5  ">
               Sipariş Tutarı:
-              <span className="font-bold"> {totalPrice} ₺</span>
+              <span className="font-bold"> {totalPrice.toFixed(2)} ₺</span>
             </h3>
           </div> : <div>Lütfen sepetinizi duldurunuz...</div>
       }

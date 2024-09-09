@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e6063d0-0cd3-499d-a736-0ffa93e2f569" name="Changes" comment="workspace commit" />
+    <list default="true" id="1e6063d0-0cd3-499d-a736-0ffa93e2f569" name="Changes" comment="readMe guncellendi">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/src/components/OrderValue/OrderValue.js" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/components/OrderValue/OrderValue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-commerce/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/e-commerce/src/index.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +55,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
     &quot;npm.start.executor&quot;: &quot;Run&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.2.0.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
@@ -68,7 +73,17 @@
       <recent name="C:\Users\Emekci\Documents\react\e-commerce\e-commerce\src\components\OrderValue" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.build">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/e-commerce/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/e-commerce/package.json" />
       <command value="run" />
@@ -81,6 +96,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -105,7 +121,8 @@
       <workItem from="1725523421312" duration="41498000" />
       <workItem from="1725593475317" duration="21559000" />
       <workItem from="1725700328038" duration="6064000" />
-      <workItem from="1725782347206" duration="9232000" />
+      <workItem from="1725782347206" duration="26634000" />
+      <workItem from="1725872746267" duration="726000" />
     </task>
     <task id="LOCAL-00001" summary="workspace commit">
       <option name="closed" value="true" />
@@ -131,7 +148,71 @@
       <option name="project" value="LOCAL" />
       <updated>1725797111417</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add Netlify redirects to handle client-side routing">
+      <option name="closed" value="true" />
+      <created>1725805263574</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725805263574</updated>
+    </task>
+    <task id="LOCAL-00005" summary="babel paketi yuklendi">
+      <option name="closed" value="true" />
+      <created>1725807131057</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725807131057</updated>
+    </task>
+    <task id="LOCAL-00006" summary="build islemleri yapildi">
+      <option name="closed" value="true" />
+      <created>1725808158805</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725808158805</updated>
+    </task>
+    <task id="LOCAL-00007" summary="build islemleri yapildi">
+      <option name="closed" value="true" />
+      <created>1725810866595</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1725810866595</updated>
+    </task>
+    <task id="LOCAL-00008" summary="netlify toml eklendi">
+      <option name="closed" value="true" />
+      <created>1725812079293</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1725812079293</updated>
+    </task>
+    <task id="LOCAL-00009" summary="control eklendi">
+      <option name="closed" value="true" />
+      <created>1725813199028</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1725813199028</updated>
+    </task>
+    <task id="LOCAL-00010" summary="sidebar configrasyon">
+      <option name="closed" value="true" />
+      <created>1725817744085</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1725817744085</updated>
+    </task>
+    <task id="LOCAL-00011" summary="readMe guncellendi">
+      <option name="closed" value="true" />
+      <created>1725818352475</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1725818352475</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +223,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="workspace commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace commit" />
+    <MESSAGE value="add Netlify redirects to handle client-side routing" />
+    <MESSAGE value="babel paketi yuklendi" />
+    <MESSAGE value="build islemleri yapildi" />
+    <MESSAGE value="netlify toml eklendi" />
+    <MESSAGE value="control eklendi" />
+    <MESSAGE value="sidebar configrasyon" />
+    <MESSAGE value="readMe guncellendi" />
+    <option name="LAST_COMMIT_MESSAGE" value="readMe guncellendi" />
   </component>
 </project>
